@@ -1,0 +1,148 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.header-principal {
+    background-color: #FF0000;
+    padding: auto;
+}
+
+.GAVIGOL img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #FF0000; /* Color de fondo de la barra de navegación */
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #FFF !important; /* Color de texto de los enlaces de navegación */
+}
+
+.navbar-toggler {
+    border-color: #FFF;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-nav .nav-link:hover {
+    color: #CCC !important; /* Color de los enlaces al pasar el ratón */
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #FF0000; /* Color de fondo del menú desplegable */
+}
+
+.navbar-nav .dropdown-item {
+    color: #FFF; /* Color de los elementos del menú desplegable */
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: black;
+    color: #000; /* Color de los elementos del menú desplegable al pasar el ratón */
+}
+
+.form-control {
+    margin-right: 10px;
+}
+
+.btn-outline-success {
+    margin-right: 20px;
+    color: white; /* Color del texto del botón */
+    border-color: blue; /* Color del borde del botón */
+    background-color: blue;
+}
+
+.btn-outline-success:hover {
+    background-color: blue;
+    color: white; /* Color del texto del botón al pasar el ratón */
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.profile-container {
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    padding: 5px;
+}
+
+.edit-button {
+    background-color: #ffc107;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.edit-button:hover {
+    background-color: #e0a800;
+}
+
+/* Responsive styles */
+@media (max-width: 767.98px) {
+    .header-principal {
+        text-align: center;
+    }
+    
+    .header-principal .GAVIGOL,
+    .header-principal nav {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    nav .d-flex {
+        justify-content: center !important;
+    }
+
+    .profile-container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .profile-image {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+/* Estilos para el contenido de la barra de navegación */
+.navbar-collapse {
+    justify-content: flex-end; /* Alineación de los elementos a la derecha en pantallas grandes */
+}
